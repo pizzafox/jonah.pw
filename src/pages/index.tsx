@@ -1,12 +1,10 @@
-import {Box, Heading, ResponsiveContext} from 'grommet';
+import { Box, Heading, ResponsiveContext } from 'grommet';
 import React from 'react';
 import Card from '../components/card';
 import Description from '../components/description';
 import Header from '../components/header';
 import projects from '../config/projects';
 import Colorful from '../layouts/colorful';
-
-export const config = {amp: 'hybrid'};
 
 /**
  * Home page.

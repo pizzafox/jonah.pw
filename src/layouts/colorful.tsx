@@ -1,7 +1,6 @@
-import {Anchor, Grommet, Paragraph} from 'grommet';
-import {useAmp} from 'next/amp';
+import { Grommet } from 'grommet';
 import Head from 'next/head';
-import React, {ReactNode, useEffect, useState} from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 import Seo from '../components/seo';
 import siteMetadata from '../config/site-metadata';
 // eslint-disable-next-line import/no-unassigned-import
@@ -83,14 +82,6 @@ function Colorful(props: {
 			</Head>
 			<Grommet full theme={theme}>
 				{props.children}
-				{useAmp() && (
-					<Paragraph margin='large' color={{light: 'dark-3', dark: 'light-3'}}>
-						You are on the AMP version of this website.{' '}
-						<Anchor as='sup' href={siteMetadata.url}>
-							Original
-						</Anchor>
-					</Paragraph>
-				)}
 			</Grommet>
 		</>
 	);

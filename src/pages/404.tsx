@@ -1,10 +1,8 @@
-import {faHome} from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import BoxButton from '../components/box-button';
 import Header from '../components/header';
 import Colorful from '../layouts/colorful';
-
-export const config = {amp: 'hybrid'};
 
 /**
  * Home page.
