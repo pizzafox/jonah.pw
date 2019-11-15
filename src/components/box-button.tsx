@@ -51,16 +51,19 @@ function BoxButton(props: {
 							: 'small'
 					}
 					elevation={hovered ? 'xlarge' : props.href ? 'medium' : 'none'}
+					as='sup'
 				>
 					<Box
-						as='span'
+						as='sup'
 						direction='row'
 						align='center'
 						gap='small'
 						style={{display: 'inline-flex'}}
 					>
 						{props.icon && <FontAwesomeIcon icon={props.icon} size='lg' />}
-						<Text weight='bold'>{props.children}</Text>
+						<Text weight='bold' as='sup'>
+							{props.children}
+						</Text>
 					</Box>
 				</Box>
 			)}
@@ -71,6 +74,7 @@ function BoxButton(props: {
 		const anchorBox = (
 			<Anchor
 				href={props.href}
+				as='sup'
 				onMouseOver={() => setHovered(true)}
 				onMouseOut={() => setHovered(false)}
 			>

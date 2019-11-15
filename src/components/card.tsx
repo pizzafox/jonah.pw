@@ -41,7 +41,7 @@ function Card(props: {
 
 	const card = (
 		<>
-			<Box responsive direction='row' justify='between' align='start'>
+			<Box responsive direction='row' justify='between' align='start' as='sup'>
 				<ThemeContext.Extend
 					value={{
 						heading: {
@@ -53,6 +53,7 @@ function Card(props: {
 						level={3}
 						margin='none'
 						color={{dark: '#ffffff', light: '#000000'}}
+						as='sup'
 					>
 						{props.title}
 					</Heading>
@@ -63,6 +64,7 @@ function Card(props: {
 							left: 'small',
 							bottom: 'small'
 						}}
+						as='sup'
 					>
 						<ThemeContext.Consumer>
 							{theme => (
@@ -91,11 +93,12 @@ function Card(props: {
 	if (props.href) {
 		return (
 			<NoHover>
-				<Anchor key={props.title} href={props.href}>
+				<Anchor key={props.title} href={props.href} as='sup'>
 					<Box
 						{...baseProps}
 						elevation={hovered ? 'xlarge' : baseElevation}
 						className={animationStyles.transition}
+						as='sup'
 						onMouseOver={() => setHovered(true)}
 						onMouseOut={() => setHovered(false)}
 					>

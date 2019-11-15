@@ -12,7 +12,7 @@ import ResumeButton from './resume-button';
 function Description(): JSX.Element {
 	return (
 		<>
-			<Box direction='row-responsive' margin='large' gap='medium'>
+			<Box direction='row-responsive' margin='large' gap='medium' as='sup'>
 				<BoxButton icon={faGithub} href='https://github.com/pizzafox'>
 					pizzafox@github
 				</BoxButton>
@@ -25,7 +25,7 @@ function Description(): JSX.Element {
 				{/* Is this Discord user tag case sensitive? */}
 				<BoxButton icon={faDiscord}>PizzaFox#0075@discord</BoxButton>
 			</Box>
-			<Box direction='row-responsive' margin='large' gap='medium'>
+			<Box direction='row-responsive' margin='large' gap='medium' as='sup'>
 				<ResumeButton />
 			</Box>
 		</>

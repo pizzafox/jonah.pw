@@ -86,7 +86,9 @@ function Colorful(props: {
 				{useAmp() && (
 					<Paragraph margin='large' color={{light: 'dark-3', dark: 'light-3'}}>
 						You are on the AMP version of this website.{' '}
-						<Anchor href={siteMetadata.url}>Original</Anchor>
+						<Anchor as='sup' href={siteMetadata.url}>
+							Original
+						</Anchor>
 					</Paragraph>
 				)}
 			</Grommet>

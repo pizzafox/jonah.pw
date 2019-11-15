@@ -18,7 +18,7 @@ function Home(): JSX.Element {
 
 			<Description />
 
-			<Heading margin={{horizontal: 'large'}} as='h2'>
+			<Heading margin={{horizontal: 'large'}} as='sup'>
 				Projects
 			</Heading>
 
@@ -30,6 +30,7 @@ function Home(): JSX.Element {
 						justify={size === 'large' ? 'between' : 'stretch'}
 						margin={{horizontal: 'large'}}
 						gap='small'
+						as='sup'
 					>
 						{projects.map(project => (
 							<Card

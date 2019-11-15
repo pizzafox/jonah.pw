@@ -140,7 +140,7 @@ export default function SEO(props: {
 
 			<meta property='og:type' content='website' />
 
-			<meta name='twitter:card' content='summary' />
+			<meta name='twitter:card' content='svg' />
 
 			<meta key='themeColor' name='theme-color' content={themeColor} />
 			<meta name='msapplication-navbutton-color' content={themeColor} />
