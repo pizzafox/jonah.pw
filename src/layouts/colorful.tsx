@@ -1,6 +1,6 @@
-import { Grommet } from 'grommet';
+import {Grommet} from 'grommet';
 import Head from 'next/head';
-import React, { ReactNode, useEffect, useState } from 'react';
+import React, {ReactNode, useEffect, useState} from 'react';
 import Seo from '../components/seo';
 import siteMetadata from '../config/site-metadata';
 // eslint-disable-next-line import/no-unassigned-import

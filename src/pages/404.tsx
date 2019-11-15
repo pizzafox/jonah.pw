@@ -1,4 +1,4 @@
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import {faHome} from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import BoxButton from '../components/box-button';
 import Header from '../components/header';
